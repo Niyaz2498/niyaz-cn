@@ -43,18 +43,20 @@
 
 .Task-section {
     flex: 1 0 auto;
-    background-color: rgb(45, 180, 45);
+    background-color: $background-main;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-title-text-secondary{
-    padding-left: 20px;
+    // padding-left: 20px;
     font-family: "Plus Jakarta Sans";
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 2%;
-    color: #888793;
+    color: $text-heading;
 }
 .progress-ToDo {
     color: $todo-color;
@@ -70,4 +72,33 @@
     color: $complete-color;
     border: 1px solid $complete-color;
     background-color: $complete-background;
+}
+.task-container {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    // height: 100px;
+}
+.task-top {
+    // height: 80px;
+    min-height: 30px;
+    // background-color: purple;
+    display: flex;
+    flex-direction: row;
+}
+.task-item-holder {
+    width: 70%;
+    // background-color: red;
+}
+.taskItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.taskItem input[type="checkbox"] {
+    accent-color: white;
+}
+.task-tag-holder {
+    height: 35px;
 }
