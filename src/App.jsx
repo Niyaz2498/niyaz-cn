@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.scss'
+import './styles/App.scss'
 import Separator from "./components/Separator"
+import HomeMain from "./components/HomeMain"
+import HomeSide from './components/HomeSide'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,12 +35,16 @@ function App() {
     <>
     <div className="navbar">...</div>
     <div className="column1">
+      <div className='side-menu-list'>
+
+      </div>
       <Separator></Separator>
+      <div className='sm-extras'>
+        
+      </div>
     </div>
-    <div className="column2">
-      <Separator></Separator>
-    </div>
-    <div className="column3">...</div>
+    <HomeMain></HomeMain>
+    <HomeSide></HomeSide>
     </>
   )
 }
