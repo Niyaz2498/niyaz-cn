@@ -11,14 +11,34 @@
 }
 
 .calendar-section {
-    flex: 0 0 20%;
+    flex: 0 0 25%;
     background-color: red;
     margin-bottom: 10px;
 }
 .progress-section {
-    flex: 0 0 20%;
-    background-color: rgb(17, 0, 255);
+    flex: 0 0 15%;
+    background-color: $background-main;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    // padding-top: 10%;
+    align-items: center;
+}
+.progress-item {
+    flex: 0 0 28%;
+    height: 70%;
+    border-radius: 10px;
+    // margin-top: 10%;
+    // background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2%;
 }
 
 .Task-section {
@@ -26,4 +46,28 @@
     background-color: rgb(45, 180, 45);
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.user-title-text-secondary{
+    padding-left: 20px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2%;
+    color: #888793;
+}
+.progress-ToDo {
+    color: $todo-color;
+    border: 1px solid $todo-color;
+    background-color: $todo-background;
+}
+.progress-InProgress {
+    color: $in-progress-color;
+    border: 1px solid $in-progress-color;
+    background-color: $in-progress-background;
+}
+.progress-Complete {
+    color: $complete-color;
+    border: 1px solid $complete-color;
+    background-color: $complete-background;
 }
