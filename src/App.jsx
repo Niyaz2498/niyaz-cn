@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.scss'
+import Separator from "./components/Separator"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,11 +34,13 @@ function App() {
   return (
     <>
     <div className="navbar">...</div>
-    <div className="content">
-      <div className="column">...</div>
-      <div className="column">...</div>
-      <div className="column">...</div>
+    <div className="column1">
+      <Separator></Separator>
     </div>
+    <div className="column2">
+      <Separator></Separator>
+    </div>
+    <div className="column3">...</div>
     </>
   )
 }
