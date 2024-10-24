@@ -3,6 +3,7 @@ import './styles/App.scss'
 import Separator from "./components/Separator"
 import HomeMain from "./components/HomeMain"
 import HomeSide from './components/HomeSide'
+import Sidebar from './components/Sidebar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,15 +35,7 @@ function App() {
   return (
     <>
     <div className="navbar">...</div>
-    <div className="column1">
-      <div className='side-menu-list'>
-
-      </div>
-      <Separator></Separator>
-      <div className='sm-extras'>
-        
-      </div>
-    </div>
+    <Sidebar></Sidebar>
     <HomeMain></HomeMain>
     <HomeSide></HomeSide>
     </>

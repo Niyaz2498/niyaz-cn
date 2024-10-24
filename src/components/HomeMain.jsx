@@ -1,5 +1,6 @@
 import React from 'react'
 import Separator from './Separator'
+import NotesItem from './NotesItem'
 
 const HomeMain = () => {
   return (
@@ -17,7 +18,14 @@ const HomeMain = () => {
         </div>
         <Separator></Separator>
         <div className='NotesSection'>
-
+          <div className="notes-section-header">
+            <span className='user-title-text-secondary'>Notes</span>
+          </div>
+          <div className="notes-list">
+            <NotesItem></NotesItem>
+            <NotesItem></NotesItem>
+            <NotesItem></NotesItem>
+          </div>
         </div>
 
         </div>
