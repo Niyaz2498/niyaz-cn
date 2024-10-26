@@ -10,7 +10,7 @@ const Searchbox = () => {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-      // Handle search logic here,  e.g., make an API call
+      // Handle search logic here, e.g., make an API call
       console.log('Search term:', searchTerm);
     };
   

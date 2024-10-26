@@ -78,22 +78,57 @@ html, body {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  align-items: center;
 }
 
 .separator {
   height: 0.95px;
+  width: 100%;
   background-color: #E6E4F0;
   margin: 0 20px;
 }
 .sep-holder {
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 80%;
 }
 .side-menu-list {
-  flex: 0 0 22%;
-  background-color: red;
+  // flex: 0 0 22%;
+  width: 80%;
+  background-color: $side-menu-color;
+  display: flex;
+  flex-direction: column;
 }
 .sm-extras {
   flex: 1 0 auto;
+  width: 80%;
   background-color: turquoise;
 }
+.MenuItemSelected {
+  // width: calc(100%-30px);
+  flex-grow: 1;
+  height: 50px;
+  background-color: $todo-color;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+.MenuItem {
+  // width: calc(100%-30px);
+  flex-grow: 1;
+  height: 50px;
+  // background-color: $todo-color;
+  color: $text-heading;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+// .Imgbgw {
+//   fill: purple;
+// }
