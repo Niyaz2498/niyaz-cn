@@ -18,7 +18,7 @@ const Searchbox = () => {
         <>
             <div className="search">
                 <img src={searchIcon} className="searchIcon" alt="Search Icon"/>
-                <input type="text" name="search" className="round" placeholder='search'/> 
+                <input type="text" name="search" className="round" placeholder='Search'/> 
             </div>
             {/* <input type="text" name="search" class="round" /> */}
             {/* <input type="submit" className="corner" value="" /> */}
