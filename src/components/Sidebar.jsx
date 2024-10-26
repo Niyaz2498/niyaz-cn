@@ -9,6 +9,9 @@ import CategoryDark from "../assets/Category.svg"
 import ActivityDark from "../assets/Activity.svg"
 import CalendarDark from "../assets/Calendar.svg"
 import FolderDark from "../assets/Folder.svg"
+import UpgradeBanner from './UpgradeBanner'
+import dispProf from "../assets/DP.png"
+import gearIcon from "../assets/Setting.svg"
 
 const Sidebar = () => {
     const [selectedMenu, setSelectedMenu] = useState("Home")
@@ -25,7 +28,17 @@ const Sidebar = () => {
       </div>
       <Separator></Separator>
       <div className='sm-extras'>
-        
+        <UpgradeBanner></UpgradeBanner>
+        <div className="UserBadgeHolder">
+            <div className="UserBadge">
+                <img src={dispProf} alt="display profile"/>
+                <div className="UserDetailHolder">
+                    <span>Dalton Smith</span>
+                    <span>Free Account</span>
+                </div>
+                <img className="setting" src={gearIcon} alt="settings" />
+            </div>
+        </div>
       </div>
     </div>
   )

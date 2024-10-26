@@ -94,15 +94,17 @@ html, body {
 }
 .side-menu-list {
   // flex: 0 0 22%;
-  width: 80%;
+  width: 90%;
   background-color: $side-menu-color;
   display: flex;
   flex-direction: column;
 }
 .sm-extras {
   flex: 1 0 auto;
-  width: 80%;
-  background-color: turquoise;
+  width: 90%;
+  // background-color: turquoise;
+  display: flex;
+  flex-direction: column;
 }
 .MenuItemSelected {
   // width: calc(100%-30px);
