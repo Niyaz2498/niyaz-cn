@@ -16,13 +16,20 @@ const Searchbox = () => {
   
     return (
         <>
-        <div className="searchLeftCurve"></div>
-        <img src={searchIcon} alt="Search Icon"/>
-        <input type="text" />
-        <div className="searchRightCurve"></div>
-      </>
+            <div className="search">
+                <img src={searchIcon} className="searchIcon" alt="Search Icon"/>
+                <input type="text" name="search" className="round" placeholder='search'/> 
+            </div>
+            {/* <input type="text" name="search" class="round" /> */}
+            {/* <input type="submit" className="corner" value="" /> */}
+        </>
     );
-  
+    
 }
 
 export default Searchbox
+
+{/* <div className="searchLeftCurve"></div>
+<img src={searchIcon} alt="Search Icon"/>
+<input type="text" />
+<div className="searchRightCurve"></div> */}

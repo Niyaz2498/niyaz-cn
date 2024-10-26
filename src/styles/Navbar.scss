@@ -1,7 +1,7 @@
 .navbar {
     grid-row: 1;
     grid-column: 1 / span 3;
-    background-color: #f0f0f0;
+    background: linear-gradient(89.91deg, rgba(67, 24, 255, 0.25) -31.98%, #FEC6DF 66.33%);
     /* padding: 10px; */
     height: 80px;
     background-color: $peri-test;
@@ -15,7 +15,7 @@
   .LogoSpace {
     width: 180px;
     height: 60px;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin-left: 40px;
     display: flex;
     align-items: center;
@@ -28,12 +28,15 @@
   }
 
   .RightBox{
-    width: 180px;
+    // width: 180px;
     height: 60px;
-    background-color: green;
+    // background-color: green;
     margin-left: 100px;
     justify-self: flex-end;
     margin-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   .LeftBox {
     display: flex;
@@ -66,6 +69,8 @@
 .SearchSpace img {
     margin: 5px;
     // background-color: white;
+    position: absolute;
+    z-index: 6;
 }
 .SearchSpace input {
     flex-grow: 1;
@@ -74,4 +79,61 @@
     border: 0px;
 }
 
-//other
+//Add Task btn
+.AddTaskBtn {
+    height: 35px;
+    background-color: $todo-color;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    // padding-top: 10ps
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: fit-content;
+    border-radius: 10px;
+    // margin-right: 10px;
+}
+.AddTaskBtn span {
+    margin-left: 10px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.AddTaskBtn img{
+    width:15px;
+    height:15px;
+}
+.NotificationBtn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+// .corner {
+//     position: absolute;
+//     top: 3px;
+//     left: 5px;
+//     height: 20px;
+//     width: 20px;
+//     z-index: 10;
+//     border-radius: 10px;
+//     border: none;
+//     background: #000; /* Set the bg image here. with "no-repeat" */
+// }
+
+.search {
+    position: relative;
+    width: 190px;
+    height: 30px;
+}
+.round {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
