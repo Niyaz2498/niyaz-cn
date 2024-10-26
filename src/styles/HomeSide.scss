@@ -16,7 +16,8 @@
     margin-bottom: 10px;
 }
 .progress-section {
-    flex: 0 0 15%;
+    // flex: 0 0 15%;
+    height: 105px;
     background-color: $background-main;
     margin-bottom: 10px;
     display: flex;
@@ -27,7 +28,7 @@
 }
 .progress-item {
     flex: 0 0 28%;
-    height: 70%;
+    // height: 70%;
     border-radius: 10px;
     // margin-top: 10%;
     // background-color: black;
@@ -39,6 +40,10 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 2%;
+}
+.progress-item span:not(:first-child){
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .Task-section {
@@ -74,11 +79,13 @@
     background-color: $complete-background;
 }
 .task-container {
-    background-color: green;
+    // background-color: green;
+    border: 1px solid #E6E4F0;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 5px;
+    padding: 5px;
     // height: 100px;
 }
 .task-top {
@@ -95,14 +102,54 @@
 .taskItem {
     display: flex;
     flex-direction: row;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.64px;
+    text-align: left;
+    color: $text-heading;
 }
 
 .taskItem input[type="checkbox"] {
     accent-color: white;
 }
 .task-tag-holder {
-    height: 35px;
+    // height: 35px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.task-tag-holder img {
+    margin-right: 5px;
 }
 .SubTask {
     margin-left: 30px;
+}
+.task-action-btn-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // background-color: rgba(154, 250, 102, 0.989);
+    flex-grow: 1;
+    align-items: center;
+    gap: 8px;
+}
+.taskStatus {
+    display: flex;
+    flex-direction: column;
+}
+.completionCount {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.12px;
+    text-align: left;
+    color: #BBBABE;
+}
+.tag-div {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.12px;
+    text-align: left;
 }

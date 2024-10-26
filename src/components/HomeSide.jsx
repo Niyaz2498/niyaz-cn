@@ -17,7 +17,19 @@ const HomeSide = () => {
                     "Task": "Donate Rs 500 to the charity",
                     "status": "completed",
                 }
-            ]
+            ],
+            "tags": [
+                {
+                    "title": "Donation",
+                    "color": "#FFC800",
+                    "background": "#FFC8001A"
+                },
+                {
+                    "title": "Social",
+                    "color": "#00B884",
+                    "background": "#00B88433"
+                },
+            ],
         },
         {
             "Task": "Do 500 Pushups",
@@ -35,15 +47,46 @@ const HomeSide = () => {
                     "Task": "Reach 400",
                     "status": "incomplete",
                 },
-            ]
+            ],
+            "tags": [
+                {
+                    "title": "Sport",
+                    "color": "#7B68EE",
+                    "background": "#5577FF1A"
+                },
+                {
+                    "title": "SelfCare",
+                    "color": "#FD71AF",
+                    "background": "#FFC8001A"
+                },
+            ],
         },
         {
             "Task": "Buy new Headset",
-            "status": "completed"
+            "status": "completed",
+            "tags": [
+                {
+                    "title": "Shopping",
+                    "color": "#7B68EE",
+                    "background": "#5577FF1A"
+                },
+                {
+                    "title": "Set-up",
+                    "color": "#00B884",
+                    "background": "#00B88433"
+                },
+            ],
         },
         {
             "Task": "clean the room",
-            "status": "completed"
+            "status": "completed",
+            "tags": [
+                {
+                    "title": "Selfcare",
+                    "color": "#7B68EE",
+                    "background": "#5577FF1A"
+                }
+            ],
         },
     ]
   return (
