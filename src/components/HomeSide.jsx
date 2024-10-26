@@ -18,7 +18,33 @@ const HomeSide = () => {
                     "status": "completed",
                 }
             ]
-        }
+        },
+        {
+            "Task": "Do 500 Pushups",
+            "status": "completed",
+            "SubTask": [
+                {
+                    "Task": "Start with 100",
+                    "status": "completed",
+                },
+                {
+                    "Task": "Complete 250",
+                    "status": "completed",
+                },
+                {
+                    "Task": "Reach 400",
+                    "status": "incomplete",
+                },
+            ]
+        },
+        {
+            "Task": "Buy new Headset",
+            "status": "completed"
+        },
+        {
+            "Task": "clean the room",
+            "status": "completed"
+        },
     ]
   return (
     <div className="column3">
@@ -33,7 +59,14 @@ const HomeSide = () => {
         <Separator></Separator>
         <div className="Task-section">
             <span className='user-title-text-secondary'>Tasks for the day</span>
-            <TaskContainer details={tasklist[0]}></TaskContainer>
+            {
+                tasklist.map((taskItem)=> {
+                    return (
+                        <TaskContainer details={taskItem}></TaskContainer> 
+                    )
+                })
+            }
+            {/* <TaskContainer details={tasklist[0]}></TaskContainer> */}
         </div>
     </div>
   )

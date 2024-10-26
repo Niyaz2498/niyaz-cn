@@ -1,0 +1,77 @@
+.navbar {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    background-color: #f0f0f0;
+    /* padding: 10px; */
+    height: 80px;
+    background-color: $peri-test;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+  }
+  .LogoSpace {
+    width: 180px;
+    height: 60px;
+    border: 1px solid red;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .LogoSpace span {
+    margin-left: 20px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .RightBox{
+    width: 180px;
+    height: 60px;
+    background-color: green;
+    margin-left: 100px;
+    justify-self: flex-end;
+    margin-right: 30px;
+  }
+  .LeftBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+//   search
+.SearchSpace {
+    width: 300px;
+    // height: 60px;
+    // background-color: white;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+// .searchLeftCurve {
+//     background-color: white;
+//     width: 40px;
+//     height: 100%;
+//     border-radius: 50%;
+// }
+.searchRightCurve {
+    background-color: white;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+}
+.SearchSpace img {
+    margin: 5px;
+    // background-color: white;
+}
+.SearchSpace input {
+    flex-grow: 1;
+    height: 80%;
+    background-color: white;
+    border: 0px;
+}
+
+//other
