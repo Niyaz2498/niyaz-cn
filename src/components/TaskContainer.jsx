@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TaskItem from './TaskItem'
 import EditImg from "../assets/Edit.svg"
 import DeleteImg from "../assets/Delete.svg"
@@ -8,19 +8,31 @@ import tagIcon from "../assets/Tag.svg"
 const TaskContainer = ({details}) => {
   let totalTaskCount = details["SubTask"] ? details["SubTask"].length + 1 : 1
   const [completeCount, setCompleteCount] = useState(0)
-  console.log("details")
-  console.log(details)
-  console.log(totalTaskCount)
+
+  const IncrementCount = () => {
+    setCompleteCount(completeCount + 1)
+  }
+  const DecrementCount = () => {
+    setCompleteCount(completeCount - 1)
+  }
+
   return (
     <div className='task-container'>
       <div className="task-top">
         <div className="task-item-holder">
           
-            <TaskItem value={details["Task"]} changeCompleteCount={setCompleteCount}></TaskItem>
+            <TaskItem value={details["Task"]} incrementCount={IncrementCount} decrementCount={DecrementCount}></TaskItem>
             {
               details["SubTask"] && details["SubTask"].map((details) => {
-                return (<TaskItem cname="SubTask" value={details["Task"]} changeCompleteCount={setCompleteCount}>
-                </TaskItem>)
+                return (
+                <TaskItem 
+                  cname="SubTask" 
+                  value={details["Task"]} 
+                  incrementCount={IncrementCount} 
+                  decrementCount={DecrementCount}
+                >
+                </TaskItem>
+                )
               })
             }
         </div>

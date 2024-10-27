@@ -6,8 +6,10 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    height: calc(100vh - 80px);
 }
 
 .calendar-section {
@@ -79,7 +81,7 @@
     background-color: $complete-background;
 }
 .task-container {
-    // background-color: green;
+    background-color: White;
     border: 1px solid #E6E4F0;
     display: flex;
     flex-direction: column;
@@ -268,4 +270,15 @@
 .taskTextCompleted{
     color: $todo-color;
     text-decoration: line-through;
+}
+.editMenu, .deleteMenu, .threedots {
+    display: inline;
+    padding: 5px;
+    margin: 0;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.editMenu:hover, .deleteMenu:hover, .threedots:hover {
+    background-color: $background-main;
+    border: 1px solid #E6E4F0
 }

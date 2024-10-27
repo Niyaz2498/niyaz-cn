@@ -1,14 +1,16 @@
 import React, { useState }  from 'react'
 
-const TaskItem = ({cname="", value}) => {
+const TaskItem = ({cname="", value, taskCompleteCount, incrementCount, decrementCount}) => {
     const [completed, setCompleted] = useState(false)
     var classes = `taskItem ${cname}`
     var TaskTextClass = completed ? "taskTextCompleted" : "taskText"
-    // var classesSelected = `taskItemSelected ${cname}`
-    const handleChange = (e) => {
+    function handleChange(e) {
         setCompleted(!completed);
-        // changeCompleteCount()
-        console.log(e)
+        if(e.target.checked){
+          incrementCount()
+        }else{
+          decrementCount()
+        }
       };
     
   return (
