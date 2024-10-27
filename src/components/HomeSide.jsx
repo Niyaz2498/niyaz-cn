@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Separator from './Separator'
 import ProgressContent from './ProgressContent'
 import TaskContainer from './TaskContainer'
+import CalendarElements from './CalendarElements'
 
 const HomeSide = () => {
+    const [selected, setSelected] = useState("3")
     var tasklist = [
         {
             "Task": "Donate Rs 500 to the charity",
@@ -89,10 +91,59 @@ const HomeSide = () => {
             ],
         },
     ]
+    var calElemList = [
+        {
+            "id": "1",
+            "date":"19",
+            "day": "Sun"
+        },
+        {
+            "id": "2",
+            "date":"20",
+            "day": "Mon"
+        },
+        {
+            "id": "3",
+            "date":"21",
+            "day": "Tue"
+        },
+        {
+            "id": "4",
+            "date":"22",
+            "day": "Wed"
+        },
+        {
+            "id": "5",
+            "date":"23",
+            "day": "Thu"
+        },
+        {
+            "id": "6",
+            "date":"24",
+            "day": "Fri"
+        },
+        {
+            "id": "7",
+            "date":"25",
+            "day": "Sat"
+        },
+    ]
   return (
     <div className="column3">
         <div className="calendar-section">
-            <span className='user-title-text-secondary'>Calendar</span>
+            <div className="calendarHeaderSpace">
+                <span className='user-title-text-secondary'>Calendar</span>
+            </div>
+            <div className="calendarIconsHolder">
+                {/* <CalendarElements id="1" Selected="7" date="19" day="Sun">
+
+                </CalendarElements> */}
+                {
+                    calElemList.map((elem)=>{
+                        return <CalendarElements id={elem.id} selected={selected} date={elem.date} day={elem.day} changeSelected={setSelected}></CalendarElements>
+                    })
+                }
+            </div>
         </div>
         <div className="progress-section">
             <ProgressContent cname="progress-ToDo" value={["To-Do", "20"]}></ProgressContent>
