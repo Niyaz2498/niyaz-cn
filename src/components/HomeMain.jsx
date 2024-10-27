@@ -3,6 +3,7 @@ import Separator from './Separator'
 import NotesItem from './NotesItem'
 import PlusBlue from "../assets/PlusBlue.svg"
 import notesRt from "../assets/RtArrow.svg"
+import ChartDetailHolder from './ChartDetailHolder'
 
 const HomeMain = () => {
   return (
@@ -16,7 +17,9 @@ const HomeMain = () => {
                 Dalton's Home
             </span>
         <div className='chartSection'>
+          <ChartDetailHolder>
             
+          </ChartDetailHolder>
         </div>
         <Separator></Separator>
         <div className='NotesSection'>

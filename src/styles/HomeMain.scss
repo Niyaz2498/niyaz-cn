@@ -29,9 +29,11 @@
     background-color: white;
     border: 1px solid #ECEBF3;
     height: 36%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 7px;
+    margin-bottom: 8px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .NotesSection{
     // background-color: pink;
@@ -49,7 +51,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 .notes-list {
     width: 100%;
@@ -170,4 +174,124 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.chartHeaderSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: red;
+    padding: 15px;
+}
+.chartHeaderSection span {
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.24px;
+    text-align: left;
+    color: $text-heading;
+}
+.chartHeaderSection div {
+    border: 1px solid #E7E6F0;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.chartDetailSection {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    // background-color: red;
+}
+.detail-total-completed span:first-child{
+    font-family: Plus Jakarta Sans;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: $NotesText;
+}
+.detail-total-completed span:not(:first-child) {
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: $chart-green;    
+}
+.taskCompletedText {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: $NotesText;
+}
+.progressStatus span{
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+    text-align: left;
+    color: $chart-green;    
+}
+.openTasksBtn span{
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.12px;
+    text-align: left;
+    color: #7B68EE;    
+}
+.detailDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+}
+.detail-total-completed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.progressStatus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.openTasksBtn {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    border: 1px solid #7B68EE;
+    border-radius: 10px;
+}
+.chartElementHolder {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+
+}
+.lineChartHolder {
+    padding-left: 20%;
+    width: 100%;
+    height: 95%;
 }
