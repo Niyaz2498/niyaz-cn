@@ -1,1 +1,1 @@
-This is the base version of my site. Stay tuned
+This is designed as a part of a challenge at presidio. More details will be updated soon. 
