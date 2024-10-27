@@ -110,9 +110,9 @@
     color: $text-heading;
 }
 
-.taskItem input[type="checkbox"] {
-    accent-color: white;
-}
+// .taskItem input[type="checkbox"] {
+//     accent-color: white;
+// }
 .task-tag-holder {
     // height: 35px;
     display: flex;
@@ -124,6 +124,7 @@
 }
 .SubTask {
     margin-left: 30px;
+    margin-top: 5px;
 }
 .task-action-btn-holder {
     display: flex;
@@ -241,8 +242,30 @@
 }
 .calendarIconsHolder {
     display: flex;
+    width: 100%;
+    // background-color: green;
     flex-direction: row;
     gap: 8px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+.taskCheck {
+    background-color: white;
+    appearance: none;
+    border: 2px solid #BBBBBE;
+    width: 15px;
+    height: 15px;
+}
+.taskCheck:checked{
+    appearance: revert;
+    accent-color: $todo-color;
+    color: white
+}
+.taskCheck:checked::after {
+    content: "";
+    color: white
+}
+.taskTextCompleted{
+    color: $todo-color;
+    text-decoration: line-through;
 }

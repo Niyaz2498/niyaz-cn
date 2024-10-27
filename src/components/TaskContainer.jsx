@@ -16,10 +16,10 @@ const TaskContainer = ({details}) => {
       <div className="task-top">
         <div className="task-item-holder">
           
-            <TaskItem value={details["Task"]}></TaskItem>
+            <TaskItem value={details["Task"]} changeCompleteCount={setCompleteCount}></TaskItem>
             {
               details["SubTask"] && details["SubTask"].map((details) => {
-                return (<TaskItem cname="SubTask" value={details["Task"]}>
+                return (<TaskItem cname="SubTask" value={details["Task"]} changeCompleteCount={setCompleteCount}>
                 </TaskItem>)
               })
             }

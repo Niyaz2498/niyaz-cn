@@ -51,6 +51,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: white;
 }
 
 
@@ -81,18 +82,22 @@ html, body {
   flex-direction: column;
   padding-top: 10px;
   align-items: center;
+  // height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 .separator {
   height: 0.95px;
-  width: 100%;
+  width: calc(100% - 20px);
   background-color: #E6E4F0;
-  margin: 0 20px;
+  // margin: 0 10px 0 10px;
+  margin-left: 10px;
 }
 .sep-holder {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 80%;
+  // width: calc(100% - 20px);
+  width: 100%;
 }
 .side-menu-list {
   // flex: 0 0 22%;
