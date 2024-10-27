@@ -1,6 +1,6 @@
 .navbar {
-    grid-row: 1;
-    grid-column: 1 / span 3;
+    // -row: 1;
+    // grid-cogridlumn: 1 / span 3;
     background: linear-gradient(89.91deg, rgba(67, 24, 255, 0.25) -31.98%, #FEC6DF 66.33%);
     /* padding: 10px; */
     height: 80px;
@@ -83,6 +83,7 @@
     background-color: white;
     border: 0px;
     text-indent: 20px;
+    color: black;
 }
 
 //Add Task btn
@@ -99,6 +100,9 @@
     max-width: fit-content;
     border-radius: 10px;
     // margin-right: 10px;
+}
+.AddTaskBtn:hover{
+    background-color: $Add-Task-button-hover;
 }
 .AddTaskBtn span {
     margin-left: 10px;

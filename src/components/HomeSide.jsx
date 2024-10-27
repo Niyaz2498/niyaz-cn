@@ -3,6 +3,8 @@ import Separator from './Separator'
 import ProgressContent from './ProgressContent'
 import TaskContainer from './TaskContainer'
 import CalendarElements from './CalendarElements'
+import PlusBlue from "../assets/PlusBlue.svg"
+import notesRt from "../assets/RtArrow.svg"
 
 const HomeSide = () => {
     const [selected, setSelected] = useState("3")
@@ -78,19 +80,20 @@ const HomeSide = () => {
                     "background": "#00B88433"
                 },
             ],
-        },
-        {
-            "Task": "clean the room",
-            "status": "completed",
-            "tags": [
-                {
-                    "title": "Selfcare",
-                    "color": "#7B68EE",
-                    "background": "#5577FF1A"
-                }
-            ],
-        },
+        }
     ]
+    // ,
+    //     {
+    //         "Task": "clean the room",
+    //         "status": "completed",
+    //         "tags": [
+    //             {
+    //                 "title": "Selfcare",
+    //                 "color": "#7B68EE",
+    //                 "background": "#5577FF1A"
+    //             }
+    //         ],
+    //     },
     var calElemList = [
         {
             "id": "1",
@@ -152,7 +155,17 @@ const HomeSide = () => {
         </div>
         <Separator></Separator>
         <div className="Task-section">
-            <span className='user-title-text-secondary'>Tasks for the day</span>
+            <div className="taskHeader">
+                <span className='user-title-text-secondary'>Tasks for the day</span>
+                <div className="notesHeaderBtnGrp">
+                    <div className='NotesAdd'>
+                        <img src={PlusBlue} alt="Add" />
+                    </div>
+                    <div className='NextBig'>
+                        <img src={notesRt} alt="Add" />
+                    </div>
+                </div>
+            </div>
             {
                 tasklist.map((taskItem)=> {
                     return (

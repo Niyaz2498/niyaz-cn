@@ -1,6 +1,6 @@
 .column3 {
-    grid-row: 2;
-    grid-column: 3;
+    // grid-row: 2;
+    // grid-column: 3;
     /* Add your content here */
     background-color: $background-main;
     display: flex;
@@ -9,7 +9,8 @@
     margin-left: 20px;
     // padding-left: 20px;
     // padding-right: 20px;
-    height: calc(100vh - 80px);
+    // height: calc(100vh - 80px);
+    // max-height: calc(100vh - 180px);
 }
 
 .calendar-section {
@@ -55,6 +56,7 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    // max-height: 40vh;
 }
 
 .user-title-text-secondary{
@@ -281,4 +283,17 @@
 .editMenu:hover, .deleteMenu:hover, .threedots:hover {
     background-color: $background-main;
     border: 1px solid #E6E4F0
+}
+.taskHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.NotesAdd:hover {
+    background-color: $todo-background-hover;
+}
+.NextBig:hover {
+    background-color: $rt-blue-hover;
 }

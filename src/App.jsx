@@ -36,9 +36,11 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Sidebar></Sidebar>
-    <HomeMain></HomeMain>
-    <HomeSide></HomeSide>
+    <div className='mainContentHolder'>
+      <Sidebar></Sidebar>
+      <HomeMain></HomeMain>
+      <HomeSide></HomeSide>
+    </div>
     </>
   )
 }
