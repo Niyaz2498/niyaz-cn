@@ -114,7 +114,15 @@
 .NotificationBtn {
     width: 30px;
     height: 30px;
-    border: 1px solid black;
+    // border: 1px solid black;
+    // position: absolute;
+}
+.redDot {
+    width: 10px;   
+    height: 10px;   
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
 }
 // .corner {
 //     position: absolute;

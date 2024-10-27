@@ -3,8 +3,11 @@ import Logo from "../assets/Logo.png"
 import Searchbox from './Searchbox'
 import plusSymbol from "../assets/Path_34201.svg"
 import dp from "../assets/DP.png"
+import NotificationExist from "../assets/NotificationExist.svg"
+import Notification from "../assets/Notifications.svg"
 
 const Navbar = () => {
+    let notification = true
   return (
     <div className="navbar">
         <div className="LeftBox">
@@ -21,7 +24,12 @@ const Navbar = () => {
                 <img src={plusSymbol} alt="Plus Symbol" /> 
                 <span className="AddTaskText">ADD TASKS</span>
             </div>
-            <div className="NotificationBtn"></div>
+            <div className="NotificationBtn">
+                {/* <div className="redDot"> */}
+                <img src={notification ? NotificationExist : Notification} alt="Notification bell" />
+
+                {/* </div> */}
+            </div>
             <img src={dp} alt="ProfilePic" />
         </div>
     </div>
