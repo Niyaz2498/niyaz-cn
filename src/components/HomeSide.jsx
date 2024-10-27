@@ -82,18 +82,6 @@ const HomeSide = () => {
             ],
         }
     ]
-    // ,
-    //     {
-    //         "Task": "clean the room",
-    //         "status": "completed",
-    //         "tags": [
-    //             {
-    //                 "title": "Selfcare",
-    //                 "color": "#7B68EE",
-    //                 "background": "#5577FF1A"
-    //             }
-    //         ],
-    //     },
     var calElemList = [
         {
             "id": "1",
@@ -138,9 +126,6 @@ const HomeSide = () => {
                 <span className='user-title-text-secondary'>Calendar</span>
             </div>
             <div className="calendarIconsHolder">
-                {/* <CalendarElements id="1" Selected="7" date="19" day="Sun">
-
-                </CalendarElements> */}
                 {
                     calElemList.map((elem)=>{
                         return <CalendarElements id={elem.id} selected={selected} date={elem.date} day={elem.day} changeSelected={setSelected}></CalendarElements>
@@ -173,7 +158,6 @@ const HomeSide = () => {
                     )
                 })
             }
-            {/* <TaskContainer details={tasklist[0]}></TaskContainer> */}
         </div>
     </div>
   )

@@ -1,40 +1,27 @@
 .column3 {
-    // grid-row: 2;
-    // grid-column: 3;
-    /* Add your content here */
     background-color: $background-main;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     margin-left: 20px;
-    // padding-left: 20px;
-    // padding-right: 20px;
-    // height: calc(100vh - 80px);
-    // max-height: calc(100vh - 180px);
 }
 
 .calendar-section {
     flex: 0 0 20%;
-    // background-color: red;
     margin-bottom: 10px;
 }
 .progress-section {
-    // flex: 0 0 15%;
     height: 105px;
     background-color: $background-main;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    // padding-top: 10%;
     align-items: center;
 }
 .progress-item {
     flex: 0 0 28%;
-    // height: 70%;
     border-radius: 10px;
-    // margin-top: 10%;
-    // background-color: black;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
@@ -56,11 +43,9 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    // max-height: 40vh;
 }
 
 .user-title-text-secondary{
-    // padding-left: 20px;
     font-family: "Plus Jakarta Sans";
     font-weight: 600;
     font-size: 20px;
@@ -90,18 +75,14 @@
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 5px;
-    // height: 100px;
 }
 .task-top {
-    // height: 80px;
     min-height: 30px;
-    // background-color: purple;
     display: flex;
     flex-direction: row;
 }
 .task-item-holder {
     width: 70%;
-    // background-color: red;
 }
 .taskItem {
     display: flex;
@@ -114,11 +95,7 @@
     color: $text-heading;
 }
 
-// .taskItem input[type="checkbox"] {
-//     accent-color: white;
-// }
 .task-tag-holder {
-    // height: 35px;
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -134,7 +111,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // background-color: rgba(154, 250, 102, 0.989);
     flex-grow: 1;
     align-items: center;
     gap: 8px;
@@ -161,7 +137,6 @@
 .CalendarElement {
     width: 55px;
     height: 75px;
-    // background-color: green;
     border-radius: 10px;
     border: 1px solid #E6E4F0;
     display: flex;
@@ -170,7 +145,6 @@
 .CalendarElementSelected {
     width: 76px;
     height: 106px;
-    // background-color: green;
     border-radius: 10px;
     border: 1px solid #E6E4F0;
     display: flex;
@@ -247,7 +221,6 @@
 .calendarIconsHolder {
     display: flex;
     width: 100%;
-    // background-color: green;
     flex-direction: row;
     gap: 8px;
     justify-content: space-evenly;

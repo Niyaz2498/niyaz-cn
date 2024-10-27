@@ -10,7 +10,6 @@ function LineChart() {
         label: 'Weekly Progress',
         data: [3, 2, 4, 3, 2, 3, 3], // Adjust values to total 20
         borderColor: '#FD71AF',
-        // backgroundColor: 'rgba(75, 192, 192, 0.2)',
       },
     ],
   };
@@ -37,7 +36,6 @@ function LineChart() {
           }}
         />
     </div>
-    // <></>
   );
 }
 

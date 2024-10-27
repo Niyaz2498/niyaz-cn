@@ -25,10 +25,7 @@ const Navbar = () => {
                 <span className="AddTaskText">ADD TASKS</span>
             </div>
             <div className="NotificationBtn">
-                {/* <div className="redDot"> */}
                 <img src={notification ? NotificationExist : Notification} alt="Notification bell" />
-
-                {/* </div> */}
             </div>
             <img src={dp} alt="ProfilePic" />
         </div>

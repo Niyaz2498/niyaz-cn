@@ -4,63 +4,16 @@
 @import "./Sidebar.scss";
 @import "./Navbar.scss";
 
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  // background-color: white;
   background-color: $background-main;
 }
 
 
 #root {
-  display: Flex;
-  // grid-template-rows: auto 1fr;
-  // // grid-template-columns: 16% 1fr 34%;
-  // grid-template-columns: 1.5fr 4.5fr 3fr;
+  display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
@@ -68,30 +21,20 @@ html, body {
 .mainContentHolder{
   display: flex;
   flex-direction: row;
-  // min-height: calc(100vh - 80px);
   min-height: auto;
 }
 
 .content {
-  // grid-row: 2;
   display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  /* gap: 20px; */
 }
 
 .column1 {
-  // grid-row: 2;
-  // grid-column: 1;
-  /* Add your content here */
-  // background-color: blueviolet;
-  // background-color: #fbfbfb;
   background-color: white;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
   align-items: center;
   min-width: 15rem;
-  // height: 100vh;
   height: calc(100vh - 80px);
 }
 
@@ -99,17 +42,14 @@ html, body {
   height: 0.95px;
   width: calc(100% - 20px);
   background-color: #E6E4F0;
-  // margin: 0 10px 0 10px;
   margin-left: 10px;
 }
 .sep-holder {
   padding-top: 5px;
   padding-bottom: 5px;
-  // width: calc(100% - 20px);
   width: 100%;
 }
 .side-menu-list {
-  // flex: 0 0 22%;
   width: 90%;
   background-color: $side-menu-color;
   display: flex;
@@ -118,12 +58,10 @@ html, body {
 .sm-extras {
   flex: 1 0 auto;
   width: 90%;
-  // background-color: turquoise;
   display: flex;
   flex-direction: column;
 }
 .MenuItemSelected {
-  // width: calc(100%-30px);
   flex-grow: 1;
   height: 50px;
   background-color: $todo-color;
@@ -135,10 +73,8 @@ html, body {
   gap: 10px;
 }
 .MenuItem {
-  // width: calc(100%-30px);
   flex-grow: 1;
   height: 50px;
-  // background-color: $todo-color;
   color: $text-heading;
   border-radius: 10px;
   display: flex;
@@ -147,6 +83,3 @@ html, body {
   padding-left: 20px;
   gap: 10px;
 }
-// .Imgbgw {
-//   fill: purple;
-// }

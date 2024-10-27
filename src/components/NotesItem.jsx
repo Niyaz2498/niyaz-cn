@@ -6,8 +6,6 @@ const NotesItem = ({details}) => {
     console.log("notes")
     // eslint-disable-next-line react/prop-types
     console.log(details["notesContent"])
-    // console.log(notesContent)
-    // console.log(attachment)
   return (
     <div className='NotesItem'>
       <span className="notesTitle"> {details["title"]}</span>

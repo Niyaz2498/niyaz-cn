@@ -53,9 +53,6 @@ const HomeMain = () => {
             </div>
           </div>
           <div className="notes-list">
-            {/* <NotesItem title={}></NotesItem>
-            <NotesItem></NotesItem>
-            <NotesItem></NotesItem> */}
             {
               notesDetail.map((elem)=> {
                 return <NotesItem details={elem}></NotesItem>

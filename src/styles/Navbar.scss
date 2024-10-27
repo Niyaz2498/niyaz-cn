@@ -1,12 +1,8 @@
 .navbar {
-    // -row: 1;
-    // grid-cogridlumn: 1 / span 3;
     background: linear-gradient(89.91deg, rgba(67, 24, 255, 0.25) -31.98%, #FEC6DF 66.33%);
-    /* padding: 10px; */
     height: 80px;
     background-color: $peri-test;
     display: flex;
-    // justify-content: center;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -15,7 +11,6 @@
   .LogoSpace {
     width: 180px;
     height: 60px;
-    // border: 1px solid red;
     margin-left: 40px;
     display: flex;
     align-items: center;
@@ -28,9 +23,7 @@
   }
 
   .RightBox{
-    // width: 180px;
     height: 60px;
-    // background-color: green;
     margin-left: 100px;
     justify-self: flex-end;
     margin-right: 30px;
@@ -48,19 +41,11 @@
 //   search
 .SearchSpace {
     width: 300px;
-    // height: 60px;
-    // background-color: white;
     margin-left: 100px;
     display: flex;
     align-items: center;
     height: 40px;
   }
-// .searchLeftCurve {
-//     background-color: white;
-//     width: 40px;
-//     height: 100%;
-//     border-radius: 50%;
-// }
 .searchRightCurve {
     background-color: white;
     width: 40px;
@@ -69,14 +54,12 @@
 }
 .SearchSpace img {
     margin: 5px;
-    // background-color: white;
     position: absolute;
     z-index: 6;
     width: 22px;
     height: 22px;
 }
 .SearchSpace input {
-    // flex-grow: 1;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -93,13 +76,11 @@
     display: flex;
     flex-direction: row;
     padding-left: 10px;
-    // padding-top: 10ps
     display: flex;
     align-items: center;
     width: auto;
     max-width: fit-content;
     border-radius: 10px;
-    // margin-right: 10px;
 }
 .AddTaskBtn:hover{
     background-color: $Add-Task-button-hover;
@@ -118,8 +99,6 @@
 .NotificationBtn {
     width: 30px;
     height: 30px;
-    // border: 1px solid black;
-    // position: absolute;
 }
 .redDot {
     width: 10px;   
@@ -128,21 +107,9 @@
     background-color: red;
     position: relative;
 }
-// .corner {
-//     position: absolute;
-//     top: 3px;
-//     left: 5px;
-//     height: 20px;
-//     width: 20px;
-//     z-index: 10;
-//     border-radius: 10px;
-//     border: none;
-//     background: #000; /* Set the bg image here. with "no-repeat" */
-// }
 
 .search {
     position: relative;
-    // width: 190px;
     width: 100%;
     height: 30px;
 }
@@ -151,7 +118,6 @@
     height: 46px;
     border-radius: 15px;
     border: 1px #000 solid;
-    // padding: 5px 5px 5px 25px;
     padding-left: 25px;
 
     position: absolute;
@@ -159,11 +125,11 @@
     left: 0;
     z-index: 5;
 }
-round::placeholder {
-    font-family: Plus Jakarta Sans;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20.16px;
-    text-align: left;
-    text-indent: 300px;
-}
+// round::placeholder {
+//     font-family: Plus Jakarta Sans;
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 20.16px;
+//     text-align: left;
+//     text-indent: 300px;
+// }
