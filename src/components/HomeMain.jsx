@@ -4,8 +4,26 @@ import NotesItem from './NotesItem'
 import PlusBlue from "../assets/PlusBlue.svg"
 import notesRt from "../assets/RtArrow.svg"
 import ChartDetailHolder from './ChartDetailHolder'
+import screenshotInfo from "../assets/ScreenshotInfo.svg"
 
 const HomeMain = () => {
+  var notesDetail = [
+    {
+      "title": "Follow Up with Mr. Ashton",
+      "notesContent": "Following up on our meeting with Mr. Ashton, I wanted to recap the key points discussed and outline the action items moving forward. During the meeting, we touched upon the project timeline, budget considerations, and specific deliverables. Mr. Ashton expressed ...",
+      "attachment": [screenshotInfo, "Screenshot Information.png"]
+    },
+    {
+      "title": "Setlist for hackathon",
+      "notesContent": "- Project Timeline\n- Specific Deliverables\n- Additional Features for Software Solution\n- Design Phase\n- Implementation\n- Enhancements\n- Submission",
+      "attachment": []
+    },
+    {
+      "title": "Auroras and Sad Prose",
+      "notesContent": "Tears fall like rain on a lonely street \n Heart heavy with sorrow, no solace to meet\nMemories of joy now turned to dust\nIn the shadows of sadness, I place my trust\n",
+      "attachment": []
+    },
+  ]
   return (
     <>
         <div className="column2">
@@ -18,7 +36,7 @@ const HomeMain = () => {
             </span>
         <div className='chartSection'>
           <ChartDetailHolder>
-            
+
           </ChartDetailHolder>
         </div>
         <Separator></Separator>
@@ -35,9 +53,14 @@ const HomeMain = () => {
             </div>
           </div>
           <div className="notes-list">
+            {/* <NotesItem title={}></NotesItem>
             <NotesItem></NotesItem>
-            <NotesItem></NotesItem>
-            <NotesItem></NotesItem>
+            <NotesItem></NotesItem> */}
+            {
+              notesDetail.map((elem)=> {
+                return <NotesItem details={elem}></NotesItem>
+              })
+            }
           </div>
         </div>
 

@@ -97,6 +97,7 @@
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 5px;
+    flex-grow: 1;
 }
 .attachmentHeading {
     font-family: Plus Jakarta Sans;
@@ -157,6 +158,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px ;
+    // align-self: flex-end;
 }
 .dateHolder span {
     font-family: Plus Jakarta Sans;

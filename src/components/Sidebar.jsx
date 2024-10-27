@@ -31,7 +31,10 @@ const Sidebar = () => {
         <UpgradeBanner></UpgradeBanner>
         <div className="UserBadgeHolder">
             <div className="UserBadge">
-                <img src={dispProf} alt="display profile"/>
+                <div className="badgeProfPic">
+                    <img src={dispProf} alt="display profile"/>
+                    <div className="GreenDot"></div>
+                </div>
                 <div className="UserDetailHolder">
                     <span>Dalton Smith</span>
                     <span>Free Account</span>

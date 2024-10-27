@@ -27,11 +27,7 @@ function LineChart() {
                           min: 1,
                           max: 5
                       },
-                    //   display: false, 
                   }
-              },
-              animation: {
-                duration: 0
               },
               plugins: {
                 legend: {
