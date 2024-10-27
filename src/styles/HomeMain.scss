@@ -11,8 +11,9 @@
     /* Add your content here */
     background-color: $background-main;
     padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
+    // padding-left: 20px;
+    // padding-right: 20px;
 }
 
 .user-title-text{
@@ -31,19 +32,22 @@
     border-radius: 10px;
 }
 .NotesSection{
-    background-color: pink;
+    // background-color: pink;
     height: 44%;
-    margin-top: 20px;
+    max-width: 100%;
+    // margin-top: 20px;
     margin-bottom: 20px;
     // border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 .notes-section-header {
-    background-color: red;
+    // background-color: red;
     height: 15%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
 }
 .notes-list {
     width: 100%;
@@ -51,10 +55,72 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    gap: 10px;
 }
 .NotesItem {
-    width: 30%;
+    // width: 30%;
+    flex: 1;
     height: 100%;
+    // height: 370px;
     background-color: yellow;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    // overflow-x: auto;
+}
+.notesTitle {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+    text-align: left;
+    color: $text-heading;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.notesContent {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.64px;
+    text-align: left;
+    color: $NotesText;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.attachmentHeading {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.64px;
+    text-align: left;
+    color: $text-heading;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.NotesAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: $todo-background;
+}
+.notesHeaderBtnGrp {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.NextBig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1.5px solid #7B68EE
 }

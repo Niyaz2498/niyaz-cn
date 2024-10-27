@@ -57,7 +57,8 @@ html, body {
 #root {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: 16% 1fr 34%;
+  // grid-template-columns: 16% 1fr 34%;
+  grid-template-columns: 1.5fr 4.5fr 3fr;
   height: 100%;
   width: 100%;
 }
@@ -74,7 +75,8 @@ html, body {
   grid-column: 1;
   /* Add your content here */
   // background-color: blueviolet;
-  background-color: #fbfbfb;
+  // background-color: #fbfbfb;
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
